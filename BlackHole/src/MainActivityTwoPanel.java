@@ -32,10 +32,10 @@ public class MainActivityTwoPanel extends JPanel {
 	static int[][] player1_Coord, player2_Coord;
 	static boolean[] player1_Used, player2_Used, gUsed;
 	static Color[] color = {new Color(229,228,226),new Color(100,149,237),new Color(250,128,114)};
-	static boolean isPlayer1_Bot = MainActivityOne.isBot1;
-	static boolean isPlayer2_Bot = MainActivityOne.isBot2;
-	static String player1_Name = isPlayer1_Bot?"Bot-1":MainActivityOne.player1_Name;
-	static String player2_Name = isPlayer2_Bot?"Bot-2":MainActivityOne.player2_Name;
+	static boolean isPlayer1_Bot;
+	static boolean isPlayer2_Bot;
+	static String player1_Name;
+	static String player2_Name;
 	int holes = 21;
 	int player1_Suck= 0;
 	int player2_Suck= 0;
@@ -64,7 +64,11 @@ public class MainActivityTwoPanel extends JPanel {
 	
 	public MainActivityTwoPanel() {
 		
+		isPlayer1_Bot = MainActivityOne.isBot1;
+		isPlayer2_Bot = MainActivityOne.isBot2;
 		
+		player1_Name = isPlayer1_Bot?"Bot-1":MainActivityOne.player1_Name;
+		player2_Name = isPlayer2_Bot?"Bot-2":MainActivityOne.player2_Name;
 		
 		turn = 1;
 		running = true;
