@@ -17,3 +17,6 @@
 -----
 
 _To understand working of game, watch this [video](https://www.youtube.com/watch?v=zMLE7a3faI4&t=17s) by **Tom Scott**_ 
+
+## Demo
+<img src="https://ia801505.us.archive.org/7/items/demo_20210415/demo.gif">
