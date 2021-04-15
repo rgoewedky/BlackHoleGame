@@ -34,11 +34,16 @@ public class MainActivityOne extends JFrame implements ActionListener{
     static String[] choices = {"BOT","PLAYER"};
     
     static JButton btn;
-    static boolean isBot1 = true, isBot2 = true;
-    static String player1_Name = "Player1", player2_Name = "Player2";
+     static boolean isBot1, isBot2;
+    static String player1_Name, player2_Name; 
     static Color txColor;
 	
 	  public MainActivityOne() {
+		  
+		   isBot1 = true;
+		  isBot2 = true;
+		  player1_Name = "Player1";
+		  player2_Name = "Player2";
 		  
 		  txColor = MainActivity.BACKGROUND_COLOR.equals(Color.white)?Color.black:Color.white;
 		  tx1 = new JTextArea();
